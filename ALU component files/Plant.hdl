@@ -1,0 +1,21 @@
+//A'B'C+A'BC+A'C'B+AC'B
+//A'C(B'+B)+C'B(A'+A)
+//A'C + C'B
+
+CHIP Plant{
+	IN a,b,c;
+	OUT F;
+
+
+	PARTS:
+		Not(in = a, out = na);
+		Not(in = c, out = nc);
+		And(a = na, b = c, out = out1);
+		And(a = nc, b = b, out = out2);
+		Or(a = out1, b = out2, out = F);
+
+}
+
+// My own work cuz I dont got the guts to cheat :) and I am bery good boy
+//A bunch of boxers line up infront of a boxing bag......
+//thats the punchline:))))

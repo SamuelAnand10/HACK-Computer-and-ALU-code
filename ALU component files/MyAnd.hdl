@@ -1,0 +1,11 @@
+CHIP MyAnd{
+	IN a,b;
+	OUT out;
+
+	PARTS:
+		Nand(a= a, b= b, out = uout);
+		Nand(a= uout, b = uout, out = out);
+
+}
+
+// My own work cuz I dont got the guts to cheat :) and I am bery good boy

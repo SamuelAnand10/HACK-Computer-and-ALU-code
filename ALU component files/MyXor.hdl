@@ -1,0 +1,15 @@
+CHIP MyXor{
+	IN a,b;
+	OUT out;
+
+	PARTS:
+		Nand(a=a,b=b,out = out1);
+		Nand(a=a, b = out1, out = out2);
+		Nand(a = b, b = out1, out = out3);
+		Nand(a= out2, b = out3, out = out);
+
+}
+
+// My own work cuz I dont got the guts to cheat :) and I am bery good boy
+//A bunch of boxers line up infront of a boxing bag......
+//thats the punchline:))))

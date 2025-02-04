@@ -1,0 +1,11 @@
+CHIP Ourchip{
+IN in1,in2,in3,in4;
+OUT result,finsih;
+
+PARTS:
+Nand(a = in1, b = in2, out = result);
+Not(c= in3,d = in4,out= finish);
+
+
+}
+

@@ -1,0 +1,13 @@
+CHIP MyOr{
+	IN a,b;
+	OUT out;
+
+	PARTS:
+		Nand(a = a,b = a, out = out1);
+		Nand(a = b, b = b, out = out2);
+		Nand(a = out1, b = out2, out = out);
+
+}
+// My own work cuz I dont got the guts to cheat :) and I am bery good boy
+//A bunch of boxers line up infront of a boxing bag......
+//thats the punchline:)))) 

@@ -1,0 +1,13 @@
+CHIP MyFulladder{
+	IN a,b,c;
+	OUT carry,sum;
+
+	PARTS:
+		MyHalfadder(a = a, b = b, carry = carry1, sum = out1);
+		MyHalfadder(a = c, b = out1, carry = carry2, sum = sum);
+		Or(a = carry1, b = carry2 , out = carry);
+}
+
+// My own work cuz I dont got the guts to cheat :) and I am bery good boy
+//and just for spice:
+//IN THE JUNGLE THE MIGHTY JUNGLE, THE LION SLEEPS TONIGHT!

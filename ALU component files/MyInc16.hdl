@@ -1,0 +1,12 @@
+CHIP MyInc16{
+	IN in[16];
+	OUT out[16];
+
+
+	PARTS:
+		MyAdd16(a = in, b[0] = true, out = out);
+}
+
+// My own work cuz I dont got the guts to cheat :) and I am bery good boy
+//and just for spice:
+//IN THE JUNGLE THE MIGHTY JUNGLE, THE LION SLEEPS TONIGHT!

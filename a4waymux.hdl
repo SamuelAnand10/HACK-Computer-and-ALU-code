@@ -1,0 +1,9 @@
+CHIP a4waymux{
+	IN a,b,c,d,sel[2];
+	OUT out1;
+
+	PARTS:
+		mux(a = a, b = b ,sel = sel[0],out1 = e);
+		mux(a = c, b = d, sel = sel[0],out1 = f);
+		mux(a = e, b = f, sel = sel[1], out1 = out1);
+}

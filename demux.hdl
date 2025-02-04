@@ -1,0 +1,9 @@
+CHIP demux{
+	IN inp, sel;
+	OUT a,b;
+	
+	PARTS:
+		Not(in = sel, out = nsel);
+		And(a = inp, b = nsel, out= a);
+		And(a = inp, b = sel, out = b);
+}	
